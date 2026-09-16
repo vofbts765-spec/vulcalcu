@@ -1,0 +1,6 @@
+{
+  "name": "Vulnerability Severity & Bounty Calculator",
+  "description": "Offensive security calculator to assess vulnerability severity, CVSS scores, and estimated HackerOne/Bugcrowd payouts with live USD to PKR exchange rates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

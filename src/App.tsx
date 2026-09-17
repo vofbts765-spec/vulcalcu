@@ -11,6 +11,7 @@ import { SeverityMeter } from './components/SeverityMeter';
 import { DynamicQuestionForm } from './components/DynamicQuestionForm';
 import { BountyEstimator } from './components/BountyEstimator';
 import { VulnerabilityDetailsReport } from './components/VulnerabilityDetailsReport';
+import { AboutDeveloper } from './components/AboutDeveloper';
 
 import {
   ShieldAlert,
@@ -211,6 +212,9 @@ export default function App() {
             result={calculationResult}
           />
         </section>
+
+        {/* 5. ABOUT DEVELOPER & RESEARCH SECTION */}
+        <AboutDeveloper />
       </main>
 
       {/* Massive Scrollable Vulnerability Catalog Modal */}
@@ -227,7 +231,9 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
-            <span className="text-[11px] sm:text-xs">VULN•CALC // Offensive Security &amp; Bug Bounty Toolkit</span>
+            <span className="text-[11px] sm:text-xs">
+              VULN•CALC // Research Project by <strong className="text-slate-300">Abdurrahman</strong>
+            </span>
           </div>
           <div className="flex flex-wrap items-center justify-center sm:justify-end gap-2 sm:gap-4 text-[10px] sm:text-[11px] text-slate-400">
             <span>CVSS v3.1 Matrix</span>

@@ -46,7 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               {/* Inner Dark Frame with Image */}
               <div className="w-full h-full rounded-full overflow-hidden bg-[#070b14] flex items-center justify-center p-0.5">
                 <img
-                  src="https://i.postimg.cc/h45cVFHZ/Whats-App-Image-2026-09-18-at-2-55-54-PM.jpg"
+                  src="https://i.postimg.cc/gJLZN8H0/Whats-App-Image-2026-09-18-at-4-31-02-PM.jpg"
                   alt="BUG//CALC Logo"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover rounded-full select-none transform group-hover:scale-105 transition-transform duration-300"

@@ -127,7 +127,7 @@ export const Preloader: React.FC<PreloaderProps> = ({
           {/* Centered Logo Image inside the ring */}
           <div className="w-24 h-24 sm:w-30 sm:h-30 rounded-full p-1.5 bg-[#090f1d] border border-blue-500/30 overflow-hidden shadow-[0_0_20px_rgba(37,99,235,0.25)] flex items-center justify-center">
             <img
-              src="https://i.postimg.cc/h45cVFHZ/Whats-App-Image-2026-09-18-at-2-55-54-PM.jpg"
+              src="https://i.postimg.cc/gJLZN8H0/Whats-App-Image-2026-09-18-at-4-31-02-PM.jpg"
               alt="Company Logo"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover rounded-full select-none pointer-events-none"

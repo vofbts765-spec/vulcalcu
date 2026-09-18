@@ -19,7 +19,7 @@ export const AboutDeveloper: React.FC = () => {
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold tracking-wider">
               <Terminal className="w-3.5 h-3.5 text-emerald-400" />
-              <span>// 03 ABOUT DEVELOPER</span>
+              <span>// ABOUT DEVELOPER</span>
             </span>
             <span className="text-[11px] font-mono text-slate-500 hidden sm:inline-block">
               RESEARCH // PROJECT ORIGIN

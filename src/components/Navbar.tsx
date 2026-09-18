@@ -25,15 +25,43 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="border-b border-emerald-950/60 bg-[#070b12]/95 backdrop-blur-md sticky top-0 z-40 w-full overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4">
-        {/* Left: Brand / Title */}
-        <div className="flex items-center gap-2 sm:gap-3 min-w-0">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 shrink-0 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.15)]">
-            <ShieldAlert className="w-4 h-4 sm:w-5 sm:h-5" />
+        {/* Left: Brand / Logo in Cinematic Cyber Style */}
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            playSelectSound();
+          }}
+          className="group flex items-center gap-2.5 sm:gap-3.5 min-w-0 transition-transform active:scale-95"
+          title="BUG//CALC - Security Research & Bounty Calculator"
+        >
+          {/* Cinematic Glowing Logo Badge */}
+          <div className="relative shrink-0 flex items-center justify-center">
+            {/* Ambient Radial Aura */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/30 to-emerald-500/30 blur-md group-hover:blur-lg group-hover:from-blue-500/50 group-hover:to-emerald-500/50 transition-all duration-300"></div>
+
+            {/* Glowing Tech Ring Wrapper */}
+            <div className="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full p-0.5 bg-gradient-to-br from-blue-500 via-cyan-400 to-emerald-400 shadow-[0_0_15px_rgba(59,130,246,0.35)] group-hover:shadow-[0_0_22px_rgba(6,182,212,0.6)] transition-all duration-300">
+              {/* Inner Dark Frame with Image */}
+              <div className="w-full h-full rounded-full overflow-hidden bg-[#070b14] flex items-center justify-center p-0.5">
+                <img
+                  src="https://i.postimg.cc/h45cVFHZ/Whats-App-Image-2026-09-18-at-2-55-54-PM.jpg"
+                  alt="BUG//CALC Logo"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover rounded-full select-none transform group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
+
+            {/* Subtle Online Status Dot */}
+            <span className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500 border-2 border-[#070b12] shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
           </div>
+
           <div className="min-w-0">
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <span className="font-mono font-bold tracking-wider text-white text-sm sm:text-lg whitespace-nowrap">
-                VULN<span className="text-emerald-400">CALC</span>
+              <span className="font-mono font-extrabold tracking-wider text-white text-sm sm:text-lg whitespace-nowrap group-hover:text-cyan-300 transition-colors">
+                BUG<span className="text-cyan-400">//</span><span className="text-emerald-400">CALC</span>
               </span>
               <span className="hidden xs:inline-block px-1.5 sm:px-2 py-0.5 rounded text-[9px] sm:text-[10px] font-mono uppercase font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap">
                 SEC-OPS
@@ -43,7 +71,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               Offensive Security Severity &amp; Bug Bounty Estimator
             </p>
           </div>
-        </div>
+        </a>
 
         {/* Right: Live USD/PKR Ticker & Controls */}
         <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">

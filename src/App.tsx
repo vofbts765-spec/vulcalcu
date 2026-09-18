@@ -12,6 +12,7 @@ import { DynamicQuestionForm } from './components/DynamicQuestionForm';
 import { BountyEstimator } from './components/BountyEstimator';
 import { VulnerabilityDetailsReport } from './components/VulnerabilityDetailsReport';
 import { AboutDeveloper } from './components/AboutDeveloper';
+import { Preloader } from './components/Preloader';
 
 import {
   ShieldAlert,
@@ -112,6 +113,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#060910] text-slate-100 flex flex-col font-sans selection:bg-emerald-500/30 selection:text-emerald-200">
+      {/* Fullscreen Cyber Security Preloader Animation */}
+      <Preloader />
+
       {/* Top Cyber Navigation Bar */}
       <Navbar
         exchangeRate={exchangeRate}
